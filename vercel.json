@@ -4,7 +4,7 @@
     {
       "src": "college_management_system/wsgi.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "15mb", "runtime": "python3.5" }
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.1.1" }
     },
     {
       "src": "build_files.sh",
@@ -13,7 +13,7 @@
         "distDir": "staticfiles_build"
       }
     }
-   ],
+  ],
   "routes": [
     {
       "src": "/static/(.*)",
@@ -23,5 +23,5 @@
       "src": "/(.*)",
       "dest": "college_management_system/wsgi.py"
     }
-   ]
+  ]
 }
